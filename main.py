@@ -1,4 +1,5 @@
 '''Train CIFAR10 with PyTorch.'''
+#!/bin/env python3
 from __future__ import print_function
 
 import torch
@@ -21,6 +22,8 @@ parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
 args = parser.parse_args()
+
+print ("HEEE")
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 best_acc = 0  # best test accuracy
